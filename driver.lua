@@ -90,7 +90,7 @@ function EC.DeleteEvent(tParams)
 	Debug(tParams)
 	
 	GetMyEvents()
-	MyEvents[tobumber(tParams.EventID)] = nil
+	MyEvents[tonumber(tParams.EventID)] = nil
 	SetMyEvents()
 	
 	C4:DeleteEvent(tonumber(tParams.EventID))
